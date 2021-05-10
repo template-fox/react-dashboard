@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] { display: none; }
+
+table {
+    @apply w-full text-superlight;
+}
+
+table thead td {
+    @apply px-4 py-4 font-bold text-xl ;
+}
+
+table tbody td {
+    @apply py-2 px-4;
+}
+
+table tbody tr:last-child td {
+    @apply pb-4;
+}
+
+.theme .td-active td:first-child {
+    @apply bg-focused rounded-l-full;
+}
+
+.theme .td-active td:last-child {
+    @apply bg-focused rounded-r-full;
+}
+
+.theme .td-active td {
+    @apply bg-focused;
+}
+
+.theme table thead td {
+    @apply text-primary ;
+}
+
+.theme table td {
+    @apply text-gray-100
+}
+
+.theme {
+    @apply bg-dark ;
+}
+
+h3 {
+    @apply text-focused font-semibold text-3xl;
+}
+
+h4 {
+    @apply text-focused font-semibold;
+}
+
+h5 {
+    @apply font-semibold text-light;
+}
+
+select {
+    @apply  border border-superlight outline-none font-semibold bg-primary px-4 py-1 rounded-xl text-light
+}
+
+span {
+    @apply text-sm text-light
+}
+
+label {
+    @apply text-sm text-light 
+}
+
+.flex-normal {
+    @apply flex flex-wrap justify-between items-center
+}
+
+a {
+    @apply text-sm text-focused
+}
+
+input {
+    @apply flex-grow p-2 text-gray-700 outline-none
+}
