@@ -5,8 +5,8 @@ import Login from './pages/login'
 function App() {
 	return (
 		<div className="min-h-screen bg-background">
-			<Login/>
-			{/* <Dashboard/> */}
+			{/* <Login/> */}
+			<Dashboard/>
 		</div>
 	)
 }
